@@ -1,4 +1,4 @@
-name             'r2r'
+name             'R2R'
 maintainer       'Eagle Genomics Ltd'
 maintainer_email 'info@eaglegenomics.com'
 license          ''
