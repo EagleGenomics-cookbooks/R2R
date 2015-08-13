@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: r2r
+# Cookbook Name:: R2R
 # Recipe:: default
 #
 # Copyright 2013, Eagle Genomics Ltd
@@ -11,21 +11,21 @@
 ark 'R2R' do
   url "http://breaker.research.yale.edu/R2R/R2R-1.0.3.tgz"
   action :put
-  path node[:r2r][:src_path]
+  path node[:R2R][:src_path]
 end
 
 # configure & make infernal, then make R2R
 bash "make R2R" do
-  cwd "#{node[:r2r][:src_path]}/R2R/NotByZasha/infernal-0.7/"
+  cwd "#{node[:R2R][:src_path]}/R2R/NotByZasha/infernal-0.7/"
   code <<-EOH
   ./configure
   make
-  cd #{node[:r2r][:src_path]}/R2R/src
+  cd #{node[:R2R][:src_path]}/R2R/src
   make
   EOH
 end
 
-# install r2r
+# install R2R
 execute "install R2R" do
-  command "cp /usr/local/src/R2R/src/r2r /usr/local/bin/r2r"
+  command "cp /usr/local/src/R2R/src/R2R /usr/local/bin/r2r"
 end

@@ -1,11 +1,11 @@
-r2r CHANGELOG
+R2R CHANGELOG
 =============
 
-This file is used to list changes made in each version of the r2r cookbook.
+This file is used to list changes made in each version of the R2R cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of r2r
+- [your_name] - Initial release of R2R
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
