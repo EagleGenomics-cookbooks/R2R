@@ -56,9 +56,10 @@ Just include `R2R` in your node's `run_list`:
 License and Authors
 -------------------
 
-Authors:: Bart Ailey (chef@eaglegenomics.com)
-Authors:: Dan Barrell (chef@eaglegenomics.com)
-Authors:: Nick James (chef@eaglegenomics.com)
+* Authors:: Bart Ailey (chef@eaglegenomics.com) 
+* Authors:: Dan Barrell (chef@eaglegenomics.com)
+* Authors:: Nick James (chef@eaglegenomics.com)
+
 Copyright:: 2015, Eagle Genomics Ltd
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
