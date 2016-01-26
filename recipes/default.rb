@@ -5,10 +5,29 @@
 # Copyright 2016, Eagle Genomics Ltd
 #
 
+include_recipe 'build-essential'
+
+package ['tar'] do
+  action :install
+end
+
+# here for use by serverspec
+magic_shell_environment 'R2R_SRC' do
+  value node['R2R']['src_path']
+end
+
+# r2r does not provide version informaiton via the cmd line
+# magic_shell_environment 'R2R_VERSION' do
+#   value node['R2R']['version']
+# end
+
+magic_shell_environment 'R2R_BINARY' do
+  value node['R2R']['binary_path']
+end
+
 # download and upack R2R for RNA secondary structure prediction
-# We can't make & install at the same time as it's too complicated/hacky
 ark 'R2R' do
-  url 'http://breaker.research.yale.edu/R2R/R2R-1.0.3.tgz'
+  url node['R2R']['url']
   action :put
   path node['R2R']['src_path']
 end
@@ -24,7 +43,7 @@ bash 'make R2R' do
   EOH
 end
 
-# install R2R
-execute 'install R2R' do
-  command 'cp /usr/local/src/R2R/src/R2R /usr/local/bin/r2r'
+# add symbolic link
+link node['R2R']['binary_path'] do
+  to "#{node['R2R']['src_path']}/R2R/src/r2r"
 end
