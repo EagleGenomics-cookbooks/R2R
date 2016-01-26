@@ -16,7 +16,7 @@ magic_shell_environment 'R2R_SRC' do
   value node['R2R']['src_path']
 end
 
-# r2r does not provide version informaiton via the cmd line
+# r2r does not provide version information via the cmd line
 # magic_shell_environment 'R2R_VERSION' do
 #   value node['R2R']['version']
 # end
