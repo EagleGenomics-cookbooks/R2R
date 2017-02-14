@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.org/EagleGenomics-cookbooks/R2R.svg?branch=master)](https://travis-ci.org/EagleGenomics-cookbooks/R2R)
+
 R2R Cookbook
 ============
 
-This cookbook installs R2R, "a program to assist in aesthetic drawings of RNA secondary structures". The project homepage is http://breaker.research.yale.edu/R2R/, and it was published at http://www.biomedcentral.com/1471-2105/12/3. 
+This cookbook installs R2R, "a program to assist in aesthetic drawings of RNA secondary structures". The project homepage is http://breaker.research.yale.edu/R2R/, and it was published at http://www.biomedcentral.com/1471-2105/12/3.
 
 
 Requirements
@@ -56,7 +58,7 @@ Just include `R2R` in your node's `run_list`:
 License and Authors
 -------------------
 
-* Authors:: Bart Ailey (chef@eaglegenomics.com) 
+* Authors:: Bart Ailey (chef@eaglegenomics.com)
 * Authors:: Dan Barrell (chef@eaglegenomics.com)
 * Authors:: Nick James (chef@eaglegenomics.com)
 
