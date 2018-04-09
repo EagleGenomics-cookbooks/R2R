@@ -34,11 +34,11 @@ end
 
 # configure & make infernal, then make R2R
 bash 'make R2R' do
-  cwd "#{node['R2R']['src_path']}/R2R/NotByZasha/infernal-0.7/"
+  cwd "#{node['R2R']['src_path']}/R2R/"
   code <<-EOH
   ./configure
   make
-  cd #{node['R2R']['src_path']}/R2R/src
+  cd #{node['R2R']['src_path']}/R2R/
   make
   EOH
 end
